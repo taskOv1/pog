@@ -1,0 +1,18 @@
+{
+  "name": "pog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "lightbox2": "^2.11.3",
+    "swiper": "^6.7.1"
+  }
+}
