@@ -5,7 +5,6 @@
   <!-- Обязательные метатеги -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.css">
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -13,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-  <title>Привет мир!</title>
+  <title>Demo</title>
 </head>
 
 <body class="body-style">
@@ -21,7 +20,7 @@
     <nav class="navbar navbar-expand-lg fixed-top nav-bg" id="myNav">
       <div class="container">
         <div class="col-8">
-          <a href="/" class="navbar-brand">Chonicle of Forgoten Times<br /> Pawn Of the Gods</a>
+          <a href="/en" class="navbar-brand">Chonicle of Forgoten Times<br /> Pawn Of the Gods</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,78 +35,103 @@
         <div class="col-4 collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item nav-item-custom">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link" href="/en/about">About</a>
             </li>
             <li class="nav-item nav-item-custom">
-              <a class="nav-link" href="/demo">Demo</a>
+              <a class="nav-link" href="/en/demo">Demo</a>
             </li>
             <li class="nav-item nav-item-custom">
-              <a class="nav-link" href="/gallery">Gallery</a>
+              <a class="nav-link" href="/en/gallery">Gallery</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- header --> 
   </header>
-  <div class="gallery-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/01.png" data-lightbox="image-1" >
-            <img class="" src="./img/screenGallery/01.png" alt="">
-          </a>
+  <main class="top-gap">
+    <div class="demo-welcome">
+      <div class="container">
+        <div class="demo-welcome-title text-center">
+          <h1>
+            Choose comfortable way to download demo
+          </h1>
         </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/02.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/02.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/03.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/03.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/04.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/04.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/05.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/05.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/06.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/06.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/07.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/07.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/08.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/08.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/09.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/09.png" alt="">
-          </a>
-        </div>
-        <div class="col-xs col-sm-6 col-md-4 col-lg-3">
-          <a href="./img/screenGallery/10.png" data-lightbox="image-1">
-            <img src="./img/screenGallery/10.png" alt="">
-          </a>
-        </div>
-
       </div>
     </div>
-    
+    <div class="description-block">
+      <div class="container">
+        
+        <p class="description-block__paragraph">
+          You'll get game with first three avaliable levels.
+        </p>
+      </div>
+    </div>
+    <div class="download-block">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="download-inner col-7 col-md-4">
+            <div class="download-element text-center">
+              <p class="description">
+                Download via Google Drive
+              </p>
+              <a href="#" class="btn btn-primary btn-lg" tabindex="-1" role="button">Google Drive</a>
+            </div>
+            <div class="download-element text-center">
+              <p class="description">
+                Download via Torrent
+              </p>
+              <a href="#" class="btn btn-primary btn-lg" tabindex="-1" role="button">Torrent</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="social-wrap text-center">
+              <div>
+                <a class="social-youtube" href="https://youtube.com">
+                  <img social-common src="./img/assets/icons/youtube.svg" alt="">
+                </a>
+              </div>
+              <div>
+                <a class="social-facebook" href="/">
+                  <img src="./img/assets/icons/facebook.svg" alt="" class="social-common">
+                </a>
+              </div>
+              <div>
+                <a class="social-instagram" href="">
+                  <img src="./img/assets/icons/instagram.svg" alt="">
+                </a>
+              </div>
+              <div>
+                <a class="social-twitter" href="">
+                  <img src="./img/assets/icons/twitter.svg" alt="">
+                </a>
+              </div>
+          </div>
+          <p class="copyright text-center">
+            &#169; 2021 Victor Yurtin
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- <ul>
+    <li><a class="social-youtube" href="https://youtube.com"></a></li>
+    <li><a class="social-facebook" href="/"></a></li>
+    <li><a class="social-instagram" href=""></a></li>
+    <li><a class="social-twitter" href=""></a></li>
+  </ul> -->
+
   <!-- Дополнительный JavaScript; выберите один из двух! -->
 
   <!-- Вариант 1: Bootstrap в связке с Popper -->
@@ -131,13 +155,6 @@
       }
     }
     navChecker(window.screen.width)
-  </script>
-  <script src="./lightbox2/dist/js/lightbox-plus-jquery.js"></script>
-  <script>
-    lightbox.option({
-      'alwaysShowNavOnTouchDevices': true,
-      'wrapAround' : true
-    })
   </script>
 </body>
 

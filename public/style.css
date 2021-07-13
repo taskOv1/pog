@@ -18,10 +18,31 @@
   background-color: #000;
 }
 
-body {
-  min-height: 3000px;
-  /* testing */
+
+html {
+  height: 100%;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+
+.top-gap {
+  margin-top: 5em;
+}
+
+
+/* body { */
+  /* min-height: 3000px; */
+  /* testing */
+/* } */
 /* Bootstrap items */
 .navbar-brand {
   color: #fff;
@@ -118,9 +139,14 @@ body {
 }
 /* / demo-button */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 762px) {
   .slider-text {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 341px) and (max-width: 575px) {
+  .slider-text {
+    font-size: 2rem;
   }
   .slider-group {
     margin-top: -7%;
@@ -136,11 +162,7 @@ body {
     margin-top: 20%;
   }
 }
-@media screen and (max-width: 762px) {
-  .slider-text {
-    font-size: 2.2rem;
-  }
-}
+
 @media screen and (min-width: 992px) {
   .carousel-inner {
     /* height: 40em; */
@@ -155,7 +177,7 @@ body {
 }
 @media screen and (min-width: 320px) and (max-width: 340px) {
   .slider-text {
-    font-size: 1rem;
+    font-size: 1.4rem;
 
   }
   .slider-group {
@@ -308,3 +330,28 @@ body {
   color: #fff;
 }
 /* / footer */
+
+/* demo welcome */
+.demo-welcome .demo-welcome-title {
+  color: var(--contrast-color);
+}
+/* / demo welcome */
+
+/* demo download */
+.download-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.download-inner .download-element {
+  margin-right: 1em;
+  min-width: 100%;
+}
+.download-inner .download-element .description {
+  color: var(--contrast-color);
+  margin-top: 0.5em;
+}
+.download-inner .btn {
+  min-width: 100%;
+}
+/* / demo download */
