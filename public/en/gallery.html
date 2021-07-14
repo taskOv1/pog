@@ -60,9 +60,9 @@
           let imageArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,17, 18, 19, 20];
           
           
-          for (let i = 0; imageArray.length > 0; i++) {
+          while (imageArray.length > 0) {
             let rand = Math.floor(Math.random() * imageArray.length);
-            let image = rand + 1;
+            
             let template = 
             `
               <div class="col-xs col-sm-6 col-md-4 col-lg-3">
@@ -73,7 +73,7 @@
             `;
             // console.log(template);
             row.innerHTML += template;
-            imageArray.splice(rand,1);
+            imageArray.splice(rand, 1);
           }
       
         </script>

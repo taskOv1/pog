@@ -81,6 +81,24 @@ main {
   display: none;
 }
 
+.btn-secondary {
+  border-color: transparent;
+}
+.btn-group, .btn-group-vertical {
+  max-width: 3.5rem;
+  display: block;
+}
+.language-switcher{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu {
+  background-color: transparent;
+  min-width: 3.5rem;
+}
+.dropdown-menu li {
+  /* width: 20px; */
+  text-align: center;
+}
 /* Bootstrap items */
 
 /* header */
