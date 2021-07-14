@@ -193,6 +193,12 @@ main {
   }
 }
 
+/* @media screen and (min-width: 1600px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container.xxxl {
+    max-width: 1520px;
+  }
+} */
+
 /* toggler */
 .navbar-toggler-icon {
   display: inline-block;
@@ -286,7 +292,7 @@ main {
   margin-bottom: 15px;
   max-width: 100%;
   height: auto;
-  border: 1px solid #fff;
+  border: 1px solid rgb(97, 97, 97);
 }
 .gallery-wrap img:hover{
   border-color: var(--contrast-color);
