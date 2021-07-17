@@ -11,6 +11,10 @@ app.use('/en/', express.static('./public'));
 app.use('/ru', express.static('./public'));
 app.use('/en',router_en);
 app.use('/ru', router_ru)
+app.use('/game', (req, res) => {
+  const file = `${__dirname}/public/en/PawnOfTheGods.rar`;
+  res.download(file);
+})
 
 app.all('*', (req, res) => {
   res.status(404).send('resource not found');
