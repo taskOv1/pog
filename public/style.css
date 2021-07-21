@@ -11,7 +11,8 @@
 /* variables */
 :root {
   --font-from-game: "FromGame";
-  --contrast-color: rgb(232, 187, 9);
+  --contrast-color: rgb(233, 200, 67);
+  --button-color: rgb(36, 38, 146);
 }
 /* / variables */
 .body-style {
@@ -153,8 +154,12 @@ main {
 /* /header */
 
 /* demo-button */
-.demo-button a {
-  
+.demo-button .btn {
+  background-color: var(--button-color);
+  border: none;
+}
+.demo-button .btn:hover {
+  background-color: rgb(36, 106, 172);
 }
 /* / demo-button */
 
@@ -284,7 +289,7 @@ main {
 
 /* description-block */
 .short-descrption {
-  color:rgb(232, 187, 9);
+  color: var(--contrast-color);
   text-align: center;
   font-family: var(--font-from-game);
   font-weight: 700;
@@ -380,5 +385,12 @@ main {
 }
 .download-inner .btn {
   min-width: 100%;
+  background-color: var(--button-color);
+  
+  /* rgb(36, 38, 146) */
+  border: none;
+}
+.download-inner .btn:hover {
+  background-color: rgb(36, 106, 172);
 }
 /* / demo download */
