@@ -13,7 +13,7 @@ router.get('/gallery', (req, res) => {
 });
 router.get('/about', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../public/en/about.html'));
-})
+});
 // router.get('*', (req, res) => {
 //   res.status(404).send('page not found');
 // })
