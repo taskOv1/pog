@@ -7,14 +7,14 @@ const router_en = require('./routers/router_en');
 const router_ru = require('./routers/router_ru');
 
 app.use(express.static('./public'));
-app.use('/', express.static('./public/en'));
+app.use('/', express.static('./public/en')); // always use en version as basic
 
 app.use('/en/', express.static('./public'));
 app.use('/ru', express.static('./public'));
 app.use('/en',router_en);
 app.use('/ru', router_ru);
 app.use('/game', (req, res) => {
-  const file = `${__dirname}/public/en/PawnOfTheGods.rar`;
+  const file = `${__dirname}/public/PawnOfTheGods.rar`;
   res.download(file);
 })
 
@@ -26,7 +26,7 @@ app.use('/', (req, res) => {
 }
 })
 
-app.all('*', (req, res) => {
+app.get('*', (req, res) => {
   res.status(404).send('resource not found');
 })
 // app.use('/', router);
