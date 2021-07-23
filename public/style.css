@@ -282,13 +282,13 @@ main {
 /* / demo-button */
 
 /* description-wrapper */
-.description-wrapper {
+.description-wrapper {0
   margin-top: 2em;
 }
 /* /description-wrapper */
 
 /* description-block */
-.short-descrption {
+.short-description {
   color: var(--contrast-color);
   text-align: center;
   font-family: var(--font-from-game);
@@ -394,3 +394,22 @@ main {
   background-color: rgb(36, 106, 172);
 }
 /* / demo download */
+
+.title-font {
+  font-family: 'MedievalSharp';
+}
+
+
+/* about page */
+
+.about-title {
+  margin-bottom: 1.5em;
+}
+.about-avatar img {
+  
+}
+.about-text, .description-block__paragraph {
+  margin-top: 0;
+}
+
+/* / about page */
