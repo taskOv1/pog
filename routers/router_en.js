@@ -11,5 +11,8 @@ router.get('/demo', (req, res) => {
 router.get('/gallery', (req, res) => {
   res.status(200).sendFile(path.resolve(__dirname, '../public/en/gallery.html'));
 });
+// router.get('*', (req, res) => {
+//   res.status(404).send('page not found');
+// })
 
 module.exports = router;
