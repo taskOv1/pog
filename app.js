@@ -1,13 +1,14 @@
 const express = require('express');
 const fs = require('fs');
+const path = require('path');
 const favicon = require('serve-favicon');
 const router = express.Router();
 const app = express();
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 const router_en = require('./routers/router_en');
 const router_ru = require('./routers/router_ru');
 
-app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(express.static('./public'));
 app.use('/', express.static('./public/en')); // always use en version as basic
 
