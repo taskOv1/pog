@@ -1,0 +1,135 @@
+<main class="top-gap">
+  <div class="gallery-wrap">
+    <div class="container">
+      <div class="row" id="gallery-row">
+        <script>
+          // randomize
+          const row = document.getElementById('gallery-row');
+
+          let imageArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+
+          while (imageArray.length > 0) {
+            let rand = Math.floor(Math.random() * imageArray.length);
+
+            let template =
+              `
+            <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+              <a href="./img/screenGallery/${imageArray[rand]}.png" data-lightbox="image-1">
+                <img src="./img/screenGallery/compressed/${imageArray[rand]}.jpg" alt="">
+              </a>
+            </div>
+          `;
+            // console.log(template);
+            row.innerHTML += template;
+            imageArray.splice(rand, 1);
+          }
+
+        </script>
+        <!-- <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/01.png" data-lightbox="image-1" >
+          <img class="" src="./img/screenGallery/01.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/02.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/02.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/03.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/03.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/04.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/04.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/05.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/05.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/06.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/06.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/07.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/07.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/08.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/08.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/09.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/09.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/10.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/10.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/11.png" data-lightbox="image-1" >
+          <img class="" src="./img/screenGallery/11.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/12.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/12.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/13.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/13.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/14.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/14.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/15.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/15.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/16.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/16.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/17.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/17.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/18.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/18.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/19.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/19.png" alt="">
+        </a>
+      </div>
+      <div class="col-xs col-sm-6 col-md-4 col-lg-3">
+        <a href="./img/screenGallery/20.png" data-lightbox="image-1">
+          <img src="./img/screenGallery/20.png" alt="">
+        </a>
+      </div> -->
+
+      </div>
+    </div>
+
+
+  </div>
+</main>
