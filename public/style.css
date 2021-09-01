@@ -163,59 +163,8 @@ main {
 }
 /* / demo-button */
 
-@media screen and (max-width: 762px) {
-  .slider-text {
-    font-size: 2.2rem;
-  }
-}
-@media screen and (min-width: 341px) and (max-width: 575px) {
-  .slider-text {
-    font-size: 2rem;
-  }
-  .slider-group {
-    margin-top: -7%;
-    line-height: 1;
-  }
-  .carousel-btn {
-    margin-top: 1rem;
-  }
-  .navbar-brand {
-    font-size: .8rem;
-  }
-  .carousel-inner {
-    margin-top: 20%;
-  }
-}
+/* -------media-------- */
 
-@media screen and (min-width: 992px) {
-  .carousel-inner {
-    /* height: 40em; */
-  }
-  .carousel-btn {
-    width: 15%;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  
-}
-@media screen and (min-width: 320px) and (max-width: 340px) {
-  .slider-text {
-    font-size: 1.4rem;
-
-  }
-  .slider-group {
-    line-height: 1;
-    margin-top: -7%;
-  }
-  .carousel-btn {
-    font-size: 0.8rem;
-    margin-top: 10%;
-  }
-  .carousel-inner {
-    margin-top: 25%;
-  }
-}
 
 /* @media screen and (min-width: 1600px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container.xxxl {
@@ -280,6 +229,23 @@ main {
   margin-top: 1em;
 }
 /* / demo-button */
+
+/* kickstarter */
+.kickstarter {
+  margin-top: 2em;
+}
+.kickstarter-title{
+  color: var(--contrast-color);
+}
+
+.kickstarter-link {
+  
+}
+
+.kickstarter-img {
+  height: 4em;
+}
+/* /kickstarter */
 
 /* description-wrapper */
 .description-wrapper {
@@ -413,3 +379,74 @@ main {
 }
 
 /* / about page */
+
+
+
+
+
+
+@media screen and (max-width: 762px) {
+  .slider-text {
+    font-size: 2.2rem;
+  }
+
+  .kickstarter-img {
+    height: 3em;
+  }
+}
+@media screen and (min-width: 341px) and (max-width: 575px) {
+  .slider-text {
+    font-size: 2rem;
+  }
+  .slider-group {
+    margin-top: -7%;
+    line-height: 1;
+  }
+  .carousel-btn {
+    margin-top: 1rem;
+  }
+  .navbar-brand {
+    font-size: .8rem;
+  }
+  .carousel-inner {
+    margin-top: 20%;
+  }
+
+  .kickstarter-img {
+    height: 1.8em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .carousel-inner {
+    /* height: 40em; */
+  }
+  .carousel-btn {
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  
+}
+@media screen and (min-width: 320px) and (max-width: 340px) {
+  .slider-text {
+    font-size: 1.4rem;
+
+  }
+  .slider-group {
+    line-height: 1;
+    margin-top: -7%;
+  }
+  .carousel-btn {
+    font-size: 0.8rem;
+    margin-top: 10%;
+  }
+  .carousel-inner {
+    margin-top: 25%;
+  }
+
+  .kickstarter-img {
+    height: 1.5em;
+  }
+}
